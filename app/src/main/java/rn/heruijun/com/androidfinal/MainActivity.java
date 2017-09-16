@@ -1,5 +1,6 @@
 package rn.heruijun.com.androidfinal;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -60,7 +61,11 @@ public class MainActivity extends AppCompatActivity {
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.action_settings:
-                        Toast.makeText(MainActivity.this, "action_settings", Toast.LENGTH_SHORT).show();
+                        ProgressDialog progressDialog = new ProgressDialog(MainActivity.this);
+                        progressDialog.setTitle("带进度的对话框");
+                        progressDialog.setMessage("加载中...");
+                        progressDialog.setCancelable(true);
+                        progressDialog.show();
                         break;
                     case R.id.action_share:
                         Toast.makeText(MainActivity.this, "action_share", Toast.LENGTH_SHORT).show();
