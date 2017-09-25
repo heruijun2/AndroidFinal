@@ -1,7 +1,5 @@
 package rn.heruijun.com.androidfinal;
 
-import android.app.Application;
-
 import com.facebook.stetho.Stetho;
 
 import rn.heruijun.com.filedownload.DownloadConfig;
@@ -14,7 +12,7 @@ import rn.heruijun.com.filedownload.http.HttpManager;
  * Created by heruijun on 2017/9/8.
  */
 
-public class MyApplication extends Application {
+public class MyApplication extends CrashApplication {
 
     @Override
     public void onCreate() {
@@ -30,5 +28,7 @@ public class MyApplication extends Application {
                 .setLocalProgressThreadSize(1)
                 .builder();
         DownloadManager.getInstance().init(config);
+
+        UncaughtExceptionHandlerImpl.getInstance().init(this, BuildConfig.DEBUG, true, 0, MainActivity.class);
     }
 }

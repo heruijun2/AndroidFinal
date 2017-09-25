@@ -1,1 +1,1 @@
-include ':app', ':Filedownload', ':dbgenerate', ':httpframework', ':mythread'
+include ':app', ':Filedownload', ':dbgenerate', ':httpframework', ':mythread', ':annotator'

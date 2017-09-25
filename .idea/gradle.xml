@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Filedownload" />
+            <option value="$PROJECT_DIR$/annotator" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/dbgenerate" />
             <option value="$PROJECT_DIR$/httpframework" />
