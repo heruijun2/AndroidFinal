@@ -43,5 +43,7 @@ public class ViewMoveActivity extends AppCompatActivity {
 
     private void produceFruit() {
         IFruitFactory.create(1).produce();
+        IFruitFactory.create(2).produce();
+        IFruitFactory.create(3).produce();
     }
 }
