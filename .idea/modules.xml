@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/dbgenerate/dbgenerate.iml" filepath="$PROJECT_DIR$/dbgenerate/dbgenerate.iml" />
       <module fileurl="file://$PROJECT_DIR$/httpframework/httpframework.iml" filepath="$PROJECT_DIR$/httpframework/httpframework.iml" />
       <module fileurl="file://$PROJECT_DIR$/mythread/mythread.iml" filepath="$PROJECT_DIR$/mythread/mythread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pattern/pattern.iml" filepath="$PROJECT_DIR$/pattern/pattern.iml" />
     </modules>
   </component>
 </project>

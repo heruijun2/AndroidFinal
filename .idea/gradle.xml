@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/dbgenerate" />
             <option value="$PROJECT_DIR$/httpframework" />
             <option value="$PROJECT_DIR$/mythread" />
+            <option value="$PROJECT_DIR$/pattern" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

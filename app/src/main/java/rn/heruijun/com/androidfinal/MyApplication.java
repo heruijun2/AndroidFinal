@@ -29,6 +29,6 @@ public class MyApplication extends CrashApplication {
                 .builder();
         DownloadManager.getInstance().init(config);
 
-        UncaughtExceptionHandlerImpl.getInstance().init(this, BuildConfig.DEBUG, true, 0, MainActivity.class);
+        // UncaughtExceptionHandlerImpl.getInstance().init(this, BuildConfig.DEBUG, true, 0, MainActivity.class);
     }
 }
