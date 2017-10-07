@@ -1,5 +1,6 @@
 package rn.heruijun.com.androidfinal;
 
+import android.animation.ObjectAnimator;
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -30,6 +31,12 @@ public class ViewMoveActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_move);
         cView = (CustomView) findViewById(R.id.customview);
+        // View动画：不改变位置参数，点击后还是在位移之前的位置触发点击事件
+        // cView.setAnimation(AnimationUtils.loadAnimation(this, R.anim.translate));
+        // 属性动画，弥补了View动画的不足
+        ObjectAnimator.ofFloat(cView, "translationX", 0, 300).setDuration(1000).start();
+
+        // 编译时注解：http://www.jianshu.com/p/36a8f6335456?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io
         produceFruit();
     }
 

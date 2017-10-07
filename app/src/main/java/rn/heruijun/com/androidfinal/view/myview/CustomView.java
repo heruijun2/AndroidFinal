@@ -43,8 +43,11 @@ public class CustomView extends View {
                 // 计算移动的距离
                 int offsetX = x - lastX;
                 int offsetY = y - lastY;
-                // 调用layout方法来重新放置它的位置
-                layout(getLeft() + offsetX, getTop() + offsetY, getRight() + offsetX, getBottom() + offsetY);
+                // 方法一：调用layout方法来重新放置它的位置
+                // layout(getLeft() + offsetX, getTop() + offsetY, getRight() + offsetX, getBottom() + offsetY);
+                // 方法二
+                offsetLeftAndRight(offsetX);
+                offsetTopAndBottom(offsetY);
                 break;
         }
 
