@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/dbgenerate" />
             <option value="$PROJECT_DIR$/httpframework" />
+            <option value="$PROJECT_DIR$/myrxjava" />
             <option value="$PROJECT_DIR$/mythread" />
             <option value="$PROJECT_DIR$/pattern" />
           </set>

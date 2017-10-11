@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bt_create"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="创建操作符"/>
+
+    <Button
+        android:id="@+id/bt_transform"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="变换操作符"/>
+
+    <Button
+        android:id="@+id/bt_filter"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="过滤操作符"/>
+
+    <Button
+        android:id="@+id/bt_combine"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="组合操作符"/>
+
+    <Button
+        android:id="@+id/bt_utility"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="辅助操作符"/>
+
+    <Button
+        android:id="@+id/bt_error"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="错误操作符"/>
+
+    <Button
+        android:id="@+id/bt_conditional"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="条件和布尔操作符"/>
+
+    <Button
+        android:id="@+id/bt_conversion"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="转换操作符"/>
+
+    <Button
+        android:id="@+id/bt_okhttp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="结合Okhttp"/>
+
+    <Button
+        android:id="@+id/bt_retrofit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="结合Retrofit"/>
+
+    <Button
+        android:id="@+id/bt_rxbus"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Rxbus"/>
+
+</LinearLayout>

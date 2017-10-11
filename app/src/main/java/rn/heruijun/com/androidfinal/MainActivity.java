@@ -156,6 +156,9 @@ public class MainActivity extends AppCompatActivity {
                 } else if (position == 3) {
                     intent = new Intent(MainActivity.this, VasSonicActivity.class);
                     startActivity(intent);
+                } else if (position == 4) {
+                    intent = new Intent(MainActivity.this, RxJavaActivity.class);
+                    startActivity(intent);
                 }
             }
 
@@ -183,5 +186,7 @@ public class MainActivity extends AppCompatActivity {
         mList.add(l_3);
         String l_4 = "VasSonic研究";
         mList.add(l_4);
+        String l_5 = "RxJava";
+        mList.add(l_5);
     }
 }

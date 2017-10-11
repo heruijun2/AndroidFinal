@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Scroller;
 
 /**
  * Created by heruijun on 2017/9/3.
@@ -15,6 +16,7 @@ public class CustomView extends View {
 
     private int lastX;
     private int lastY;
+    private Scroller mScroller;
 
     public CustomView(Context context) {
         super(context);
@@ -22,6 +24,7 @@ public class CustomView extends View {
 
     public CustomView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
+        mScroller = new Scroller(context);
     }
 
     public CustomView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
@@ -48,9 +51,27 @@ public class CustomView extends View {
                 // 方法二
                 offsetLeftAndRight(offsetX);
                 offsetTopAndBottom(offsetY);
+                // ((View) getParent()).scrollBy(-offsetX, -offsetY);
                 break;
         }
 
         return true;
+    }
+
+    public void smoothScrollTo(int destX, int destY) {
+        int scrollX = getScrollX();
+        int delta = destX - scrollX;
+        mScroller.startScroll(scrollX, 0, delta, 0, 2000);
+        invalidate();
+    }
+
+    @Override
+    public void computeScroll() {
+        super.computeScroll();
+        if (mScroller.computeScrollOffset()) {
+            ((View) getParent()).scrollTo(mScroller.getCurrX(), mScroller.getCurrY());
+            // 通过不断的重绘不断的调用computeScroll方法
+            invalidate();
+        }
     }
 }

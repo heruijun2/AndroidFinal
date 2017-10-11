@@ -1,1 +1,1 @@
-include ':app', ':Filedownload', ':dbgenerate', ':httpframework', ':mythread', ':annotator', ':pattern'
+include ':app', ':Filedownload', ':dbgenerate', ':httpframework', ':mythread', ':annotator', ':pattern', ':myrxjava'
